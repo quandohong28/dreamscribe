@@ -296,7 +296,6 @@
                                         </svg>
                                     </span>
                                     <span class="nav-link-title">Truy cập trang</span>
-
                                 </a>
 
                             </div>
