@@ -25,6 +25,10 @@ Route::get('/favourite', function () {
     return view('client.favourite');
 })->name('client.favourite');
 
+Route::get('/author', function () {
+    return view('client.author');
+})->name('client.author');
+
 Route::get('/search', function () {
     return view('client.search');
 })->name('client.search');

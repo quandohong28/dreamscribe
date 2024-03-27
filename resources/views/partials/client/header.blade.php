@@ -228,300 +228,288 @@
 <header class="navbar-expand-md">
     <div class="collapse navbar-collapse" id="navbar-menu">
         <div class="navbar">
-            <div class="container-xl">
-                <ul class="navbar-nav">
+            <div class="container-xl pt-2">
+                <div class="row">
+                    <ul class="navbar-nav">
+                        {{-- HOT (trang chủ) --}}
+                        <li class="nav-item active mb-3">
+                            <a class="nav-link" href="{{ route('client.home') }}">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-flame">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title fw-bold">
+                                    HOT
+                                </span>
+                            </a>
+                        </li>
 
-                    {{-- HOT (trang chủ) ở đây --}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('client.home') }}">
-                            <span class="nav-link-icon d-md-none d-lg-inline-block">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-flame">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z" />
-                                </svg>
-                            </span>
-                            <span class="nav-link-title fw-bold">
-                                HOT
-                            </span>
-                        </a>
-                    </li>
+                        {{-- ĐÃ ĐỌC GẦN ĐÂY --}}
+                        <li class="nav-item mb-3">
+                            <a class="nav-link" href="{{ route('client.history') }}">
+                                <span
+                                    class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/checkbox -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                        <path
+                                            d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title fw-bold">
+                                    ĐÃ ĐỌC GẦN ĐÂY
+                                </span>
+                            </a>
+                        </li>
 
-                    {{-- ĐÃ ĐỌC GẦN ĐÂY --}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('client.history') }}">
-                            <span
-                                class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/checkbox -->
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                                    <path
-                                        d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
-                                </svg>
-                            </span>
-                            <span class="nav-link-title fw-bold">
-                                ĐÃ ĐỌC GẦN ĐÂY
-                            </span>
-                        </a>
-                    </li>
+                        {{-- YÊU THÍCH --}}
+                        <li class="nav-item mb-3">
+                            <a class="nav-link" href="{{ route('client.favourite') }}">
+                                <span
+                                    class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/checkbox -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-heart">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title fw-bold">
+                                    YÊU THÍCH
+                                </span>
+                            </a>
+                        </li>
 
-                    {{-- YÊU THÍCH --}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('client.favourite') }}">
-                            <span
-                                class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/checkbox -->
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-heart">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-                                </svg>
-                            </span>
-                            <span class="nav-link-title fw-bold">
-                                YÊU THÍCH
-                            </span>
-                        </a>
-                    </li>
+                        {{-- CATEGORY - DANH MỤC --}}
+                        <li class="nav-item mb-3 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" role="button" aria-expanded="false">
+                                <span
+                                    class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" />
+                                        <path d="M12 12l8 -4.5" />
+                                        <path d="M12 12l0 9" />
+                                        <path d="M12 12l-8 -4.5" />
+                                        <path d="M16 5.25l-8 4.5" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title fw-bold">
+                                    THỂ LOẠI
+                                </span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-menu-columns">
+                                    <div class="dropdown-menu-column">
+                                        <h4 class="dropdown-item fw-bold text-primary">Nhóm thể loại</h4>
+                                        <a class="dropdown-item" href="#">
+                                            Thể loại
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-menu-column">
+                                        <h4 class="dropdown-item fw-bold text-primary">Nhóm thể loại</h4>
+                                        <a class="dropdown-item" href="#">
+                                            Alerts
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-menu-column">
+                                        <h4 class="dropdown-item fw-bold text-primary">Nhóm thể loại</h4>
+                                        <a class="dropdown-item" href="#">
+                                            Alerts
+                                        </a>
+                                    </div>
 
-                    {{-- CATEGORY - DANH MỤC --}}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
-                            data-bs-auto-close="outside" role="button" aria-expanded="false">
-                            <span
-                                class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
-                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" />
-                                    <path d="M12 12l8 -4.5" />
-                                    <path d="M12 12l0 9" />
-                                    <path d="M12 12l-8 -4.5" />
-                                    <path d="M16 5.25l-8 4.5" />
-                                </svg>
-                            </span>
-                            <span class="nav-link-title fw-bold">
-                                THỂ LOẠI
-                            </span>
-                        </a>
-                        <div class="dropdown-menu">
-                            <div class="dropdown-menu-columns">
-                                <div class="dropdown-menu-column">
-                                    <h4 class="dropdown-item fw-bold text-primary">Nhóm thể loại</h4>
-                                    <a class="dropdown-item" href="#">
-                                        Thể loại
-                                    </a>
-                                </div>
-                                <div class="dropdown-menu-column">
-                                    <h4 class="dropdown-item fw-bold text-primary">Nhóm thể loại</h4>
-                                    <a class="dropdown-item" href="#">
-                                        Alerts
-                                    </a>
-                                </div>
-                                <div class="dropdown-menu-column">
-                                    <h4 class="dropdown-item fw-bold text-primary">Nhóm thể loại</h4>
-                                    <a class="dropdown-item" href="#">
-                                        Alerts
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    {{-- Quốc gia --}}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown"
-                            data-bs-auto-close="outside" role="button" aria-expanded="false">
-                            <span
-                                class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/star -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
-                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                </svg>
-                            </span>
-                            <span class="nav-link-title fw-bold">
-                                QUỐC GIA
-                            </span>
-                        </a>
-                        <div class="dropdown-menu">
-                            <div class="dropdown-menu-columns">
-                                <div class="dropdown-menu-column">
-                                    <a class="dropdown-item" href="./empty.html">
-                                        Trung Quốc
-                                    </a>
-                                </div>
-                                <div class="dropdown-menu-column">
-                                    <a class="dropdown-item" href="./logs.html">
-                                        Hàn Quốc
-                                        <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
-                                    </a>
                                 </div>
                             </div>
-                        </div>
-                    </li>
+                        </li>
 
-                    {{-- TÁC GIẢ --}}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown"
-                            data-bs-auto-close="outside" role="button" aria-expanded="false">
-                            <span
-                                class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/star -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
-                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                </svg>
-                            </span>
-                            <span class="nav-link-title fw-bold">
-                                TÁC GIẢ
-                            </span>
-                        </a>
-                        <div class="dropdown-menu">
-                            <div class="dropdown-menu-columns">
-                                <div class="dropdown-menu-column">
-                                    <a class="dropdown-item" href="./empty.html">
-                                        Ai đó
-                                    </a>
-                                </div>
-                                <div class="dropdown-menu-column">
-                                    <a class="dropdown-item" href="./logs.html">
-                                        Ai đó
-                                        <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    {{-- Xếp hạng --}}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown"
-                            data-bs-auto-close="outside" role="button" aria-expanded="false">
-                            <span
-                                class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/star -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
-                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
-                                </svg>
-                            </span>
-                            <span class="nav-link-title fw-bold">
-                                XẾP HẠNG
-                            </span>
-                        </a>
-                        <div class="dropdown-menu">
-                            <div class="dropdown-menu-columns">
-                                <div class="dropdown-menu-column">
-                                    <a class="dropdown-item" href="./empty.html">
-                                        Theo ngày
-                                    </a>
-                                    <a class="dropdown-item" href="./cookie-banner.html">
-                                        Theo tháng
-                                        <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
-                                    </a>
-                                    <a class="dropdown-item" href="./chat.html">
-                                        Theo tuần
-                                        <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
-                                    </a>
-                                    <a class="dropdown-item" href="./chat.html">
-                                        Số chương
-                                        <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
-                                    </a>
-                                </div>
-                                <div class="dropdown-menu-column">
-                                    <a class="dropdown-item" href="./logs.html">
-                                        HOT
-                                        <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
-                                    </a>
-                                    <a class="dropdown-item" href="./music.html">
-                                        Mới ra mắt
-                                    </a>
-                                    <a class="dropdown-item" href="./photogrid.html">
-                                        Mới cập nhật
-                                        <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
-                                    </a>
+                        {{-- Quốc gia --}}
+                        <li class="nav-item mb-3 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" role="button" aria-expanded="false">
+                                <span
+                                    class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title fw-bold">
+                                    QUỐC GIA
+                                </span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-menu-columns">
+                                    <div class="dropdown-menu-column">
+                                        <a class="dropdown-item" href="./empty.html">
+                                            Trung Quốc
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-menu-column">
+                                        <a class="dropdown-item" href="./logs.html">
+                                            Hàn Quốc
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
+                        </li>
 
-                    {{-- SÁCH --}}
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="{{ route('client.favourite') }}">
-                            <span
-                                class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/checkbox -->
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-heart">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-                                </svg>
-                            </span>
-                            <span class="nav-link-title fw-bold">
-                                SÁCH
-                            </span>
-                        </a>
-                    </li> --}}
+                        {{-- TÁC GIẢ --}}
+                        <li class="nav-item mb-3 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" role="button" aria-expanded="false">
+                                <span
+                                    class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title fw-bold">
+                                    TÁC GIẢ
+                                </span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-menu-columns">
+                                    <div class="dropdown-menu-column">
+                                        <a class="dropdown-item" href="./empty.html">
+                                            Ai đó
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-menu-column">
+                                        <a class="dropdown-item" href="./logs.html">
+                                            Ai đó
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
 
-                    {{-- BLOG --}}
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="{{ route('client.favourite') }}">
-                            <span
-                                class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/checkbox -->
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-heart">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-                                </svg>
-                            </span>
-                            <span class="nav-link-title fw-bold">
-                                BLOG
-                            </span>
-                        </a>
-                    </li> --}}
-                </ul>
-                <div class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">
-                    <form action="#" class="d-flex gap-2" method="get" autocomplete="off" novalidate>
-                        <div class="input-icon">
-                            <span class="input-icon-addon">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
-                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                                    <path d="M21 21l-6 -6" />
-                                </svg>
-                            </span>
+                        {{-- Xếp hạng --}}
+                        <li class="nav-item mb-3 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" role="button" aria-expanded="false">
+                                <span
+                                    class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title fw-bold">
+                                    XẾP HẠNG
+                                </span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-menu-columns">
+                                    <div class="dropdown-menu-column">
+                                        <a class="dropdown-item" href="./empty.html">
+                                            Theo ngày
+                                        </a>
+                                        <a class="dropdown-item" href="./cookie-banner.html">
+                                            Theo tháng
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./chat.html">
+                                            Theo tuần
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./chat.html">
+                                            Số chương
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-menu-column">
+                                        <a class="dropdown-item" href="./logs.html">
+                                            HOT
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./music.html">
+                                            Mới ra mắt
+                                        </a>
+                                        <a class="dropdown-item" href="./photogrid.html">
+                                            Mới cập nhật
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
 
-                            {{-- Xử lý placehoder thành tên truyện đứng đầu bảng xếp hạng --}}
-                            <input type="text" value="" class="form-control" placeholder="Tìm kiếm truyện"
-                                aria-label="Search in website">
-                        </div>
+                        {{-- SÁCH --}}
+                        <li class="nav-item mb-3">
+                            <a class="nav-link" href="{{ route('client.favourite') }}">
+                                <span
+                                    class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/checkbox -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-books">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M5 4m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+                                        <path
+                                            d="M9 4m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+                                        <path d="M5 8h4" />
+                                        <path d="M9 16h4" />
+                                        <path
+                                            d="M13.803 4.56l2.184 -.53c.562 -.135 1.133 .19 1.282 .732l3.695 13.418a1.02 1.02 0 0 1 -.634 1.219l-.133 .041l-2.184 .53c-.562 .135 -1.133 -.19 -1.282 -.732l-3.695 -13.418a1.02 1.02 0 0 1 .634 -1.219l.133 -.041z" />
+                                        <path d="M14 9l4 -1" />
+                                        <path d="M16 16l3.923 -.98" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title fw-bold">
+                                    SÁCH
+                                </span>
+                            </a>
+                        </li>
 
-                        {{-- Dẫn về trang kết quả tìm kiếm --}}
-                        <a href="{{ route('client.search') }}" class="btn btn-primary">Tìm kiếm</a>
-                    </form>
+                        {{-- BLOG --}}
+                        <li class="nav-item mb-3">
+                            <a class="nav-link" href="{{ route('client.favourite') }}">
+                                <span
+                                    class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/checkbox -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-external-link">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                                        <path d="M11 13l9 -9" />
+                                        <path d="M15 4h5v5" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title fw-bold">
+                                    BLOG
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
