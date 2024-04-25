@@ -13,8 +13,8 @@
         </h1>
         <div class="navbar-nav flex-row order-md-last">
             <div class="d-none d-md-flex">
-                <button id="enableDarkmodeButton" class="nav-link px-0" title="Enable dark mode"
-                    data-bs-toggle="tooltip" data-bs-placement="bottom">
+                <button id="enableDarkmodeButton" class="nav-link px-0" title="Chế độ tối" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -22,8 +22,8 @@
                         <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
                     </svg>
                 </button>
-                <button id="enableLightmodeButton" class="nav-link px-0" title="Enable light mode"
-                    data-bs-toggle="tooltip" data-bs-placement="bottom">
+                <button id="enableLightmodeButton" class="nav-link px-0" title="Chế độ sáng" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -158,7 +158,7 @@
 
             {{-- TÀI KHOẢN --}}
 
-            @if (Route::has('auth.loginf'))
+            @if (Route::has('auth.login'))
                 <div class="btn-list">
                     <a href="{{ route('auth.login') }}" class="btn" rel="noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -244,7 +244,7 @@
                                             d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z" />
                                     </svg>
                                 </span>
-                                <span class="nav-link-title fw-bold">
+                                <span class="nav-link-title">
                                     HOT
                                 </span>
                             </a>
@@ -265,7 +265,7 @@
                                             d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
                                     </svg>
                                 </span>
-                                <span class="nav-link-title fw-bold">
+                                <span class="nav-link-title">
                                     ĐÃ ĐỌC GẦN ĐÂY
                                 </span>
                             </a>
@@ -285,7 +285,7 @@
                                             d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
                                     </svg>
                                 </span>
-                                <span class="nav-link-title fw-bold">
+                                <span class="nav-link-title">
                                     YÊU THÍCH
                                 </span>
                             </a>
@@ -308,7 +308,7 @@
                                         <path d="M16 5.25l-8 4.5" />
                                     </svg>
                                 </span>
-                                <span class="nav-link-title fw-bold">
+                                <span class="nav-link-title">
                                     THỂ LOẠI
                                 </span>
                             </a>
@@ -316,7 +316,7 @@
                                 <div class="dropdown-menu-columns">
                                     <div class="dropdown-menu-column">
                                         <h4 class="dropdown-item fw-bold text-primary">Nhóm thể loại</h4>
-                                        <a class="dropdown-item" href="#">
+                                        <a class="dropdown-item" href="{{ route('client.search') }}">
                                             Thể loại
                                         </a>
                                     </div>
@@ -351,14 +351,14 @@
                                             d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
                                     </svg>
                                 </span>
-                                <span class="nav-link-title fw-bold">
+                                <span class="nav-link-title">
                                     QUỐC GIA
                                 </span>
                             </a>
                             <div class="dropdown-menu">
                                 <div class="dropdown-menu-columns">
                                     <div class="dropdown-menu-column">
-                                        <a class="dropdown-item" href="./empty.html">
+                                        <a class="dropdown-item" href="{{ route('client.search') }}">
                                             Trung Quốc
                                         </a>
                                     </div>
@@ -386,14 +386,14 @@
                                             d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
                                     </svg>
                                 </span>
-                                <span class="nav-link-title fw-bold">
+                                <span class="nav-link-title">
                                     TÁC GIẢ
                                 </span>
                             </a>
                             <div class="dropdown-menu">
                                 <div class="dropdown-menu-columns">
                                     <div class="dropdown-menu-column">
-                                        <a class="dropdown-item" href="./empty.html">
+                                        <a class="dropdown-item" href="{{ route('client.search') }}">
                                             Ai đó
                                         </a>
                                     </div>
@@ -421,14 +421,14 @@
                                             d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
                                     </svg>
                                 </span>
-                                <span class="nav-link-title fw-bold">
+                                <span class="nav-link-title">
                                     XẾP HẠNG
                                 </span>
                             </a>
                             <div class="dropdown-menu">
                                 <div class="dropdown-menu-columns">
                                     <div class="dropdown-menu-column">
-                                        <a class="dropdown-item" href="./empty.html">
+                                        <a class="dropdown-item" href="{{route('client.search')}}">
                                             Theo ngày
                                         </a>
                                         <a class="dropdown-item" href="./cookie-banner.html">
@@ -463,7 +463,7 @@
 
                         {{-- SÁCH --}}
                         <li class="nav-item mb-3">
-                            <a class="nav-link" href="{{ route('client.favourite') }}">
+                            <a class="nav-link" href="{{ route('client.book') }}">
                                 <span
                                     class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/checkbox -->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -483,7 +483,7 @@
                                         <path d="M16 16l3.923 -.98" />
                                     </svg>
                                 </span>
-                                <span class="nav-link-title fw-bold">
+                                <span class="nav-link-title">
                                     SÁCH
                                 </span>
                             </a>
@@ -491,7 +491,7 @@
 
                         {{-- BLOG --}}
                         <li class="nav-item mb-3">
-                            <a class="nav-link" href="{{ route('client.favourite') }}">
+                            <a class="nav-link" href="{{ route('client.blog') }}">
                                 <span
                                     class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/checkbox -->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -504,7 +504,7 @@
                                         <path d="M15 4h5v5" />
                                     </svg>
                                 </span>
-                                <span class="nav-link-title fw-bold">
+                                <span class="nav-link-title">
                                     BLOG
                                 </span>
                             </a>

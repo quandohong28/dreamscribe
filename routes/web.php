@@ -37,6 +37,10 @@ Route::get('/auth', function () {
     return view('client.auth');
 })->name('client.auth');
 
+Route::get('/book', function () {
+    return view('client.book');
+})->name('client.book');
+
 Route::get('/blog', function () {
     return view('client.blog');
 })->name('client.blog');
@@ -48,6 +52,10 @@ Route::get('/blogging', function () {
 Route::get('/detail', function () {
     return view('client.detail');
 })->name('client.detail');
+
+Route::get('/read', function () {
+    return view('client.read');
+})->name('client.read');
 
 Route::get('/profile', function () {
     return view('client.profile');
@@ -67,7 +75,7 @@ Route::get('/report', function () {
 
 Route::get('/invoice', function () {
     return view('shared.invoice');
-});
+})->name('invoice');
 
 require __DIR__ . '/admin.php';
 require __DIR__ . '/auth.php';

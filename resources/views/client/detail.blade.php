@@ -16,10 +16,38 @@
                         {{-- Thông tin truyện --}}
                         <div class="row mb-5">
                             <div class="col-4">
-                                <span>
+                                <div class="mb-3">
                                     <img src="https://st.nettruyenff.com/data/comics/146/nguyen-ton.jpg"
-                                        style="object-fit:cover" alt="" height="100%" class="rounded">
-                                </span>
+                                        style="object-fit:cover" class="rounded">
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="icon icon-tabler icons-tabler-outline icon-tabler-heart-plus">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path d="M12 20l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.96 6.053" />
+                                            <path d="M16 19h6" />
+                                            <path d="M19 16v6" />
+                                        </svg>
+                                        Yêu thích
+                                    </button>
+    
+                                    {{-- <button class="btn btn-red">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="icon icon-tabler icons-tabler-outline icon-tabler-heart-plus">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path d="M12 20l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.96 6.053" />
+                                            <path d="M16 19h6" />
+                                            <path d="M19 16v6" />
+                                        </svg>
+                                        Đang yêu thích
+                                    </button> --}}
+                                </div>
+
                             </div>
                             <div class="col-8">
                                 <h1 class="fw-bold mb-0">Nguyên Tôn</h1>
@@ -27,7 +55,7 @@
                                 <table class="table border-light">
                                     <tbody>
                                         <tr>
-                                            <th>
+                                            <th class="align-bottom">
                                                 <span class="icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                         viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -41,12 +69,12 @@
                                                 </span>
                                                 Tác giả
                                             </th>
-                                            <td>
-                                                Trác Phàm
+                                            <td class="align-bottom">
+                                                Khuyết danh
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>
+                                            <th class="align-bottom">
                                                 <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                                                         height="24" viewBox="0 0 24 24" fill="none"
                                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -64,11 +92,11 @@
                                                 </span>
                                                 Tình trạng
                                             </th>
-                                            <td>Đang cập nhật</td>
+                                            <td class="align-bottom">Đang cập nhật</td>
                                         </tr>
 
                                         <tr>
-                                            <th>
+                                            <th class="align-bottom">
                                                 <span class="icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                         viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -82,10 +110,10 @@
                                                 </span>
                                                 Thể loại
                                             </th>
-                                            <td>Chuyển sinh - Tu tiên</td>
+                                            <td class="align-bottom">Chuyển sinh - Tu tiên</td>
                                         </tr>
                                         <tr>
-                                            <th>
+                                            <th class="align-bottom">
                                                 <span class="icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                         viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -99,11 +127,11 @@
                                                 </span>
                                                 Lượt xem
                                             </th>
-                                            <td>123</td>
+                                            <td class="align-bottom">123</td>
                                         </tr>
 
                                         <tr>
-                                            <th>
+                                            <th class="align-bottom">
                                                 <span class="icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                         viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -117,7 +145,7 @@
                                                 </span>
                                                 Xếp hạng
                                             </th>
-                                            <td>
+                                            <td class="align-bottom">
                                                 @for ($i = 0; $i < 5; $i++)
                                                     <span class="icon">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24"
@@ -137,34 +165,10 @@
                                 </table>
 
                                 <div class="btn-list">
-                                    <button class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="icon icon-tabler icons-tabler-outline icon-tabler-heart-plus">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M12 20l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.96 6.053" />
-                                            <path d="M16 19h6" />
-                                            <path d="M19 16v6" />
-                                        </svg>
-                                        Yêu thích
-                                    </button>
 
-                                    <button class="btn btn-red">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="icon icon-tabler icons-tabler-outline icon-tabler-heart-plus">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M12 20l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.96 6.053" />
-                                            <path d="M16 19h6" />
-                                            <path d="M19 16v6" />
-                                        </svg>
-                                        Đang yêu thích
-                                    </button>
-
-                                    <button class="btn btn-success">Đọc từ đầu</button>
-                                    <button class="btn btn-primary">Đọc mới nhất</button>
+                                    <a href="{{ route('client.read') }}" class="btn">Đọc tiếp</a>
+                                    <a href="{{ route('client.read') }}" class="btn btn-success">Đọc từ đầu</a>
+                                    <a href="{{ route('client.read') }}" class="btn btn-primary">Đọc mới nhất</a>
                                 </div>
 
 
@@ -530,8 +534,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 

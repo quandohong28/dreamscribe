@@ -52,6 +52,7 @@
     <script src="{{ asset('assets/admin/js/main.js') }}"></script>
     <script src="{{ asset('assets/admin/js/theme.js') }}"></script>
 
+
     {{-- script libs here --}}
     @yield('libs')
 

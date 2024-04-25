@@ -16,6 +16,10 @@ Route::prefix('/admin')->group(function () {
             return view('admin.books.list');
         })->name('book.list');
 
+        Route::get('/detail', function () {
+            return view('admin.books.detail');
+        })->name('book.detail');
+
         Route::get('/add', function () {
             return 'edit book';
         })->name('book.add');

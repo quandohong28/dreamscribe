@@ -1,4 +1,4 @@
-<aside class="navbar navbar-vertical navbar-expand-lg navbar-transparent">
+<aside class="navbar navbar-vertical navbar-expand-lg navbar-transparent px-5">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu"
             aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -6,7 +6,7 @@
         </button>
         <div class="collapse navbar-collapse" id="sidebar-menu">
             <ul class="navbar-nav pt-lg-3">
-                <li class="nav-item active">
+                <li class="nav-item mb-3 card-link rounded-3 active">
                     <a class="nav-link" href="{{ route('admin.dashboard') }}">
                         <span class="nav-link-icon d-md-none d-lg-inline-block">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
@@ -21,7 +21,7 @@
                         <span class="nav-link-title">Bảng điều khiển</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-3 card-link rounded-3">
                     <a class="nav-link" href="{{ route('book.list') }}">
                         <span class="nav-link-icon d-md-none d-lg-inline-block">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -43,7 +43,7 @@
                         <span class="nav-link-title">Truyện</span>
                     </a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item mb-3 card-link rounded-3 dropdown">
                     <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
                         data-bs-auto-close="false" role="button" aria-expanded="false">
                         <span class="nav-link-icon d-md-none d-lg-inline-block">
@@ -60,7 +60,7 @@
                         </span>
                         <span class="nav-link-title">Phân loại</span>
                     </a>
-                    <div class="dropdown-menu show">
+                    <div class="dropdown-menu">
                         <div class="dropdown-menu-columns">
                             <div class="dropdown-menu-column">
                                 <a class="dropdown-item" href="{{ route('category.list') }}">
@@ -113,7 +113,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-3 card-link rounded-3">
                     <a class="nav-link" href="{{ route('user.list') }}">
                         <span class="nav-link-icon d-md-none d-lg-inline-block">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -130,7 +130,7 @@
                         <span class="nav-link-title">Người dùng</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-3 card-link rounded-3">
                     <a class="nav-link" href="{{ route('rank.list') }}">
                         <span class="nav-link-icon d-md-none d-lg-inline-block">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -146,7 +146,7 @@
                         <span class="nav-link-title">Cấp bậc</span>
                     </a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item mb-3 card-link rounded-3 dropdown">
                     <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
                         data-bs-auto-close="false" role="button" aria-expanded="false">
                         <span class="nav-link-icon d-md-none d-lg-inline-block">
@@ -198,7 +198,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-3 card-link rounded-3">
                     <a class="nav-link" href="{{ route('voucher.list') }}">
                         <span class="nav-link-icon d-md-none d-lg-inline-block">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -216,7 +216,7 @@
                         <span class="nav-link-title">Voucher</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-3 card-link rounded-3">
                     <a class="nav-link" href="{{ route('invoice.list') }}">
                         <span class="nav-link-icon d-md-none d-lg-inline-block">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -233,7 +233,7 @@
                         <span class="nav-link-title">Hoá đơn</span>
                     </a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item mb-3 card-link rounded-3 dropdown">
                     <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
                         data-bs-auto-close="false" role="button" aria-expanded="false">
                         <span class="nav-link-icon d-md-none d-lg-inline-block">
@@ -250,7 +250,7 @@
                         </span>
                         <span class="nav-link-title">Blog</span>
                     </a>
-                    <div class="dropdown-menu show">
+                    <div class="dropdown-menu">
                         <div class="dropdown-menu-columns">
                             <div class="dropdown-menu-column">
                                 <a class="dropdown-item" href="#">
@@ -297,7 +297,6 @@
                                     </span>
                                     <span class="nav-link-title">Truy cập trang</span>
                                 </a>
-
                             </div>
                         </div>
                     </div>

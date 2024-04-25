@@ -14,6 +14,10 @@ Route::get('/register', function () {
     return view('shared.register');
 })->name('auth.register');
 
+Route::get('/welcome', function () {
+    return view('shared.welcome');
+})->name('auth.welcome');
+
 Route::get('/forgot', function () {
     return view('shared.forgotPassword');
 })->name('auth.forgot');
